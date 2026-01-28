@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Assets/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(219, 0, 1, 0.5);
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    gap: 6px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #db0001;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn i {
+    font-size: 12px;
+}
+
+.lang-btn img {
+    width: 10px;
+    height: auto;
+}
+
+
+.fa-globe {
+    color: #fff;
+    width: 10px;
+    margin-right: 10px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    transition: color 0.3s ease;
+}
+
+.header-content h1:hover {
+    color: #db0001;
+    text-shadow: 0 0 20px rgba(219, 0, 1, 0.5);
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-signup:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background-color: #db0001;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+.email-signup button:hover {
+    background-color: #ff0000;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+}
+
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    transition: transform 0.3s ease;
+}
+
+.row:hover {
+    transform: scale(1.02);
+}
+
+.text-col, .img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    cursor: pointer;
+}
+
+.img-col img:hover {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.2);
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.features h2:hover {
+    color: #db0001;
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-size: 40px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.faq h2:hover {
+    color: #db0001;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.accordion li label:hover {
+    background-color: #404040;
+    padding-left: 30px;
+    box-shadow: 0 4px 15px rgba(219, 0, 1, 0.3);
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s, color 0.3s ease;
+}
+
+.accordion li label:hover::after {
+    color: #db0001;
+    transform: rotate(90deg);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.footer h2:hover {
+    color: #fff;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-left: 0;
+}
+
+.footer .col a:hover {
+    color: #fff;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+.footer .lang-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    nav .lang-btn {
+        padding: 4px 8px;
+    }
+
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .email-signup button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .text-col, .img-col {
+        flex-basis: 100%;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 15px;
+    }
+
+    .row:nth-child(2), .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .features .row {
+        padding: 10px 0;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .accordion .content {
+        font-size: 14px;
+    }
+
+    .accordion li label {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    label::after {
+        font-size: 22px;
+    }
+}
